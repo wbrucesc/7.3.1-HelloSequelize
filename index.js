@@ -1,15 +1,21 @@
 const models = require('./models');
 
-models.User.findAll().then((results)=>{
+models.User.findAll({
+  where: {
+    bio: ""
+  }
+}).then((results)=>{
   results.forEach((result) => {
-    /*
+    // BEAUTIFUL PRINTING
     console.log('===================');
     console.log(result.name);
     console.log(result.email);
     console.log(result.bio);
-    */
-    result.bio = "";
-    result.save();
+
+
+    // UPDATE EACH ROW
+    // result.bio = "";
+    // result.save();
   });
 });
 
