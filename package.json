@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jshintConfig": {
+  "esversion": 6
+},
   "dependencies": {
     "pg": "^7.2.0",
     "sequelize": "^4.7.5"
